@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 antialiased font-sans selection:bg-indigo-500/30 selection:text-white;
+  }
+
+  /* Beautiful layout custom scrollbar tracking for high-end interfaces */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-950;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-800 rounded hover:bg-slate-700 transition-colors;
+  }
+}
